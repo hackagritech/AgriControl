@@ -1,0 +1,10 @@
+.bakcground-login {
+    background:url('../images/background-login.jpg') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.form-login {
+    background-color: rgba(1, 0, 0, 0.5);
+    background: rgba(1, 0, 0, 0.5);
+    color: rgba(1, 0, 0, 0.5);
+}

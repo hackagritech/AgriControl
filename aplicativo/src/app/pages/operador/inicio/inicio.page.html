@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AgriControl</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+<p class="ion-text-end">
+  <small>Dia: {{hoje | date: 'dd/MM HH:mm'}}</small>
+</p>
+  <ion-list>
+    <ion-list-header>
+      Operações a serem realizadas
+    </ion-list-header>
+
+    <ion-item *ngFor="let tarefa of tarefas" [routerLink]="'/atividade/'+tarefa.id">
+      <ion-avatar slot="start">
+        <img [src]="'assets/logo-trator.png'">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{tarefa.defensivo}}</h2>
+        <h3>{{tarefa.talhao}}</h3>
+        <p></p>
+      </ion-label>
+      <ion-note slot="end">Hora</ion-note>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

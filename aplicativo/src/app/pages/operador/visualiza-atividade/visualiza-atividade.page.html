@@ -1,0 +1,46 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>AgriControl</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <h2>Condições climáticas</h2>
+
+    <ion-chip >
+        <ion-avatar>
+            <img [src]="'assets/local.png'">
+        </ion-avatar>
+        <ion-label>Talhão A14</ion-label>
+    </ion-chip>
+
+    <section class="card-condicao-ideal ion-padding-vertical ion-margin-top">
+        <header class="ion-text-center"><h3>Condição ideal</h3></header>
+        <ion-row class="ion-text-right">
+            <ion-col size="2">
+                <ion-thumbnail>
+                    <ion-img [src]="'assets/like.svg'" alt=""></ion-img>
+                </ion-thumbnail>
+            </ion-col>
+            <ion-col size="10">
+                <div>UR(Umidade Relativa) - Min 55%</div>
+                <div>Velocidade do vento: 3 - 12%</div>
+                <div>Temperatura < 30°</div>
+            </ion-col>
+        </ion-row>
+    </section>
+
+    <section class="card-condicao-atual ion-padding-vertical ion-text-center ion-margin-vertical">
+        <header><h3 color="danger">Condição atual</h3></header>
+        <div>UR(Umidade Relativa) - Min 55%</div>
+        <div>Velocidade do vento: 3 - 12%</div>
+        <div>Temperatura < 30°</div>
+    </section>
+
+    <ion-button class="ion-margin-top" expand="block" color="success" (click)="iniciar()">
+        Iniciar
+    </ion-button>
+</ion-content>
